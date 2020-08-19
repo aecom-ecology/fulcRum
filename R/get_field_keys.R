@@ -16,7 +16,7 @@ get_field_keys<-function(form_id){
            add_headers("X-ApiToken" = fulcRum::get_api_key()),
            accept_json())
 
-  results<-fromJSON(content(res, "text"))
+  results<-RJSONIO::fromJSON(content(res, "text"))
 
 
   extract_key <- function(x, .xname) .xname %in% c("key")
