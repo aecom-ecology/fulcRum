@@ -21,6 +21,7 @@ get_field_keys<-function(form_id){
 
   extract_key <- function(x, .xname) .xname %in% c("key")
   extract_label <- function(x, .xname) .xname %in% c("label")
+  extract_dataname <- function(x, .xname) .xname %in% c("data_name")
 
   r1 <- rrapply(results, extract_key, c, how = "flatten")
   r2 <- rrapply(results, extract_label, c, how = "flatten")
