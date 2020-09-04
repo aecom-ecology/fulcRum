@@ -1,7 +1,7 @@
 Package: fulcRum
 Type: Package
 Title: An R Interface to Fulcrum
-Version: 0.1.0
+Version: 0.1.1
 Author: Simon Tarr
 Maintainer: Simon Tarr <simon.tarr@aecom.com>
 Description: This package is designed primarily to interface to Fulcrum via the Fulcrum API to perform GET requests. However, it
