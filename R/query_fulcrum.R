@@ -22,7 +22,7 @@
 query_fulcrum<- function(query, api_key, url = "https://api.fulcrumapp.com/api/v2/query/", format = "json"){
 
   if (file.exists(query)){
-    message('Reading file...')
+    message(paste0('Reading file "',query,'"'))
     query <- paste(readLines(query), collapse = '\n')
 
   } else {
@@ -34,5 +34,6 @@ query_fulcrum<- function(query, api_key, url = "https://api.fulcrumapp.com/api/v
                  query = list("token" = api_key,
                               "q" = query,
                               "format" = format))
+  message('Done!')
   return(x)
 }
