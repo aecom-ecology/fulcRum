@@ -16,5 +16,5 @@ json_to_tibble <- function(json_obj){
   x <- httr::content(json_obj, as = "text") %>%
     jsonlite::fromJSON(.) %>% # Converts from JSON to R object
     magrittr::extract(2) %>% # extract(2) returns rows from the data (as opposed to the columns if using extract(1))
-    as_tibble(.)
+    dplyr::as_tibble(.)
 }

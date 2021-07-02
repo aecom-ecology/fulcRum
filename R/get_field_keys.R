@@ -13,8 +13,8 @@
 get_field_keys<-function(form_id){
 
   res<-GET(url = paste0("https://web.fulcrumapp.com/api/v2/forms/", form_id, ".json"),
-           add_headers("X-ApiToken" = fulcRum::get_api_key()),
-           accept_json())
+           httr::add_headers("X-ApiToken" = fulcRum::get_api_key()),
+           httr::accept_json())
 
   results<-RJSONIO::fromJSON(content(res, "text"))
 
