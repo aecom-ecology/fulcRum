@@ -4,7 +4,7 @@
 \alias{get_api_key}
 \title{Load your Fulcrum API key from file}
 \usage{
-get_api_key(key_location = "data/auth/key.RData")
+get_api_key(key_location)
 }
 \arguments{
 \item{key_location}{File location of your API key in .RData format}

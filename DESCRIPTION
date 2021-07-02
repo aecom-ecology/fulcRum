@@ -1,17 +1,18 @@
 Package: fulcRum
 Type: Package
 Title: An R Interface to Fulcrum
-Version: 0.2.0
+Version: 0.3.0
 Author: Simon Tarr
 Maintainer: Neil Robinson <neil.a.robinson@aecom.com>
 Description: This package is designed primarily to interface to Fulcrum via the Fulcrum API to perform GET requests. However, it
-    also contains functions to perform PUT requests for updating records. The package also contains various datasets common across projects (e.g. Project name lookup tables etc.)
+    also contains functions to perform PUT requests for updating records. The package also contains various datasets common across projects.
 License: MIT
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.1
 Imports:
         httr,
+        purrr,
         dplyr,
         jsonlite,
         magrittr,
