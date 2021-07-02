@@ -12,6 +12,6 @@
 #' @export
 
 
-get_api_key <- function(key_location = "data/auth/key.RData"){
+get_api_key <- function(key_location){
   key<-readRDS(key_location)
 }
